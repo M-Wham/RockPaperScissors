@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src='main.js'></script>
+    <style>
+        body{
+           display: flex;
+           flex-flow: column;
+           text-align: center;
+           font-size: xx-large;
+           color: rgb(255, 255, 255);
+           font-family: "Lucida Console", Monaco, monospace;
+           background-image: -webkit-radial-gradient(circle, rgb(44, 80, 50), black);
+           text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+        }
+        
+        .header{
+            height: 200px;
+        }
+        .btn{
+            align-self: center;
+            width: 500px;
+            height: 75px;
+            font-size: large;
+            margin: 10px;
+            font-size: xx-large;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="header"></div>
+    <button class="btn" id="rock">ROCK</button>
+    <button class="btn" id="paper">PAPER</button>
+    <button class="btn" id="scissors">SCISSORS</button>
+
+    <div class="results"></div>
+
+    <script src='main.js'></script>
 </body>
 </html>
